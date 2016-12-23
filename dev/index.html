@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppController">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Budget UI</title>
+
+    <!-- vendor:css -->
+    <link rel="stylesheet" href="/vendor/angular-material.min.css">
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/stylesheets/app.css">
+    <!-- endinject -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body>
+<md-progress-linear class="progress-bar md-warn" md-mode="indeterminate" ng-show="isLoading"></md-progress-linear>
+
+<ui-view> </ui-view>
+
+<!-- vendor:js -->
+<script src="/vendor/angular.min.js"></script>
+<script src="/vendor/angular-animate.js"></script>
+<script src="/vendor/angular-aria.min.js"></script>
+<script src="/vendor/angular-messages.js"></script>
+<script src="/vendor/angular-ui-router.min.js"></script>
+<script src="/vendor/angular-sanitize.js"></script>
+<script src="/vendor/Chart.js"></script>
+<script src="/vendor/angular-filter.js"></script>
+<script src="/vendor/angular-material.min.js"></script>
+<script src="/vendor/angular-chart.js"></script>
+<!-- endinject -->
+<!-- inject:js -->
+<script src="/app/modules/transactions/transaction.module.js"></script>
+<script src="/app/modules/transactions/controllers/view-transaction.controller.js"></script>
+<script src="/app/modules/transactions/controllers/transaction.ctrl.js"></script>
+<script src="/app/modules/transactions/controllers/edit-transaction.controller.js"></script>
+<script src="/app/modules/transactions/controllers/add-transaction.controller.js"></script>
+<script src="/app/modules/options/currency/currency.module.js"></script>
+<script src="/app/modules/options/currency/currency.factory.js"></script>
+<script src="/app/modules/options/categories/category.module.js"></script>
+<script src="/app/modules/options/categories/category.factory.js"></script>
+<script src="/app/modules/options/categories/category.controller.js"></script>
+<script src="/app/modules/options/categories/category.config.js"></script>
+<script src="/app/modules/options/accounts/accounts.module.js"></script>
+<script src="/app/modules/options/accounts/accouts.controller.js"></script>
+<script src="/app/modules/options/accounts/accounts.factory.js"></script>
+<script src="/app/modules/options/accounts/accounts.config.js"></script>
+<script src="/app/modules/chart/line/line-chart.module.js"></script>
+<script src="/app/modules/chart/line/line-chart.factory.js"></script>
+<script src="/app/modules/chart/line/line-chart.controller.js"></script>
+<script src="/app/modules/chart/line/line-chart.config.js"></script>
+<script src="/app/modules/auth/register/register.module.js"></script>
+<script src="/app/modules/auth/register/register.controller.js"></script>
+<script src="/app/modules/auth/register/register.config.js"></script>
+<script src="/app/modules/auth/login/login.module.js"></script>
+<script src="/app/modules/auth/login/login.controller.js"></script>
+<script src="/app/modules/auth/login/login.config.js"></script>
+<script src="/app/modules/auth/forgotPassword/forgot-password.module.js"></script>
+<script src="/app/modules/auth/forgotPassword/forgot-password.controller.js"></script>
+<script src="/app/modules/auth/forgotPassword/forgot-password.config.js"></script>
+<script src="/app/layouts/logined/logined.module.js"></script>
+<script src="/app/layouts/logined/subMenu/sub-menu.directive.js"></script>
+<script src="/app/layouts/logined/menu/menu.directive.js"></script>
+<script src="/app/layouts/logined/header/header.ctrl.js"></script>
+<script src="/app/shared/message-box/message-box.module.js"></script>
+<script src="/app/shared/message-box/message-box.service.js"></script>
+<script src="/app/modules/user/user.module.js"></script>
+<script src="/app/modules/user/user.service.js"></script>
+<script src="/app/modules/transactions/transaction.constant.js"></script>
+<script src="/app/modules/transactions/transaction.config.js"></script>
+<script src="/app/modules/transactions/transaction-model.factory.js"></script>
+<script src="/app/modules/plan/plan.module.js"></script>
+<script src="/app/modules/plan/plan.factory.js"></script>
+<script src="/app/modules/plan/plan.controller.js"></script>
+<script src="/app/modules/plan/plan.config.js"></script>
+<script src="/app/modules/exchange/exchange.module.js"></script>
+<script src="/app/modules/exchange/exchange.factory.js"></script>
+<script src="/app/modules/exchange/exchange.controller.js"></script>
+<script src="/app/modules/exchange/exchange.config.js"></script>
+<script src="/app/modules/dashboard/dashboard.module.js"></script>
+<script src="/app/modules/dashboard/dashboard.service.js"></script>
+<script src="/app/modules/dashboard/dashboard.controller.js"></script>
+<script src="/app/modules/dashboard/dashboard.config.js"></script>
+<script src="/app/modules/chart/chart.module.js"></script>
+<script src="/app/layouts/logined/logined.config.js"></script>
+<script src="/app/layouts/auth/auth.module.js"></script>
+<script src="/app/layouts/auth/auth.config.js"></script>
+<script src="/app/shared/shared.module.js"></script>
+<script src="/app/shared/contastant.js"></script>
+<script src="/app/app.module.js"></script>
+<script src="/app/app.theme.config.js"></script>
+<script src="/app/app.run.js"></script>
+<script src="/app/app.interceptors.js"></script>
+<script src="/app/app.config.js"></script>
+<!-- endinject -->
+<!-- templates:js -->
+<script src="/app/templates.js"></script>
+<!-- endinject -->
+
+</body>
+
+</html>

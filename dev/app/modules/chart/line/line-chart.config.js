@@ -1,0 +1,19 @@
+;(function() {
+    'use strict';
+
+    config.$inject = ["$stateProvider"];
+    angular
+        .module('line-chart')
+        .config(config);
+
+    /*@ngInject*/
+    function config($stateProvider) {
+        $stateProvider
+            .state('line-chart', {
+                url: "/line-chart",
+                parent: "page",
+                templateUrl: "modules/chart/line/line-chart.tpl.html",
+                controller: "lineChartController as lineCtrl"
+            });
+    }
+})();
